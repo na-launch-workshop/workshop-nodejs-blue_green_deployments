@@ -2,18 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: workshop-nodejs-blue_green_deployments
-  title: Blue-Green Deployments
+  title: Blue-Green Deployments - Node.js
   description: |
-    Blue-Green Deployments with Node.js
+    Blue-Green Deployments
   annotations:
     backstage.io/techdocs-ref: dir:.
   tags:
     - bluegreen
     - nodejs
-  links:
-    - url: https://<server>/#<repo>
-      title: "Launch from Dev Spaces"
-      icon: web
+# links:
+#    - url: https://<openshift-cluster>/#<hosted-git-repo>
+#      title: "Launch from Dev Spaces"
+#      icon: web
 spec:
   type: module
   lifecycle: production
