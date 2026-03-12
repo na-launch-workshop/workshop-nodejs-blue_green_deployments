@@ -11,6 +11,8 @@
 
 Simple Express service that returns a phonetic "Hello World" greeting for a configured country code. The app loads configuration from environment variables (via dotenv for local development) and supports deployment to Knative.
 
+---
+
 ## ✏️  **Local Development**
 
 1. Run the application
@@ -26,6 +28,8 @@ export COUNTRY_CODE=GA
 export PORT=3000
 npm start
 ```
+
+---
 
 ## 🔨 **Container Build**
 
@@ -44,6 +48,8 @@ podman push "$IMAGE"
 # or: docker push "$IMAGE"
 ```
 
+---
+
 ### OpenShift Local Registry (external route)
 
 ```bash
@@ -54,6 +60,8 @@ IMAGE=${REGISTRY}/<NAMESPACE>/hello-country-service:latest
 podman build -t "$IMAGE" .
 podman push "$IMAGE"
 ```
+
+---
 
 ### Build Inside OpenShift (BuildConfig)
 
@@ -75,6 +83,8 @@ The successful build publishes the image at:
 ```
 image-registry.openshift-image-registry.svc:5000/<NAMESPACE>/hello-country-service:latest
 ```
+
+---
 
 ## 🚢 **Deploy to Knative**
 

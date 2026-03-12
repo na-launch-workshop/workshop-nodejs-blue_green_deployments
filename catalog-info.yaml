@@ -4,7 +4,7 @@ metadata:
   name: workshop-nodejs-blue_green_deployments
   title: Blue-Green Deployments - Node.js
   description: |
-    Blue-Green Deployments
+    Blue-Green Deployments with Node.js
   annotations:
     backstage.io/techdocs-ref: dir:.
   tags:
